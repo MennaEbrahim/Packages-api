@@ -14,7 +14,7 @@ import pandas as pd
 from fastapi.middleware.cors import CORSMiddleware
 
 origins = [
-    "http://0.0.0.0:8000/",
+    "http://127.0.0.1:8000/",
     "https://api-model.onrender.com/predict",
     "https://api-model.onrender.com/"
     
