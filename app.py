@@ -14,9 +14,9 @@ import pandas as pd
 from fastapi.middleware.cors import CORSMiddleware
 
 origins = [
-    "http://127.0.0.1:8000/",
-    "https://api-model-2.onrender.com/predict",
-    "https://api-model-2.onrender.com/"
+    "http://0.0.0.0:8000/",
+    "https://api-model.onrender.com/predict",
+    "https://api-model.onrender.com/"
     
 ]
 
@@ -80,7 +80,7 @@ app.add_middleware(
 )
 
 if __name__=='__main__':
-    uvicorn.run(app,host='127.0.0.1',port=8001)
+    uvicorn.run(app,host='0.0.0.0',port=8001)
         
 
 
